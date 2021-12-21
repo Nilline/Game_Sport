@@ -2495,6 +2495,7 @@ body {
   position: absolute;
   z-index: 1;
   top: 0;
+  right: -3.25rem;
   -webkit-transform: translate(0%, 0%);
       -ms-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
