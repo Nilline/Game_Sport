@@ -828,8 +828,8 @@ body {
   background: #d800ff -o-linear-gradient(top, #d800ff 0%, #7100ff 100%);
   background: #d800ff linear-gradient(180deg, #d800ff 0%, #7100ff 100%);
   padding: 6px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   border-radius: 50%;
@@ -843,8 +843,8 @@ body {
   background: #d800ff -o-linear-gradient(top, #d800ff 0%, #7100ff 100%);
   background: #d800ff linear-gradient(180deg, #d800ff 0%, #7100ff 100%);
   padding: 3px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   -webkit-transform: scale(1.834);
@@ -1208,8 +1208,8 @@ body {
   background: -o-linear-gradient(top, rgba(216, 0, 255, 0.3) 0%, rgba(113, 0, 255, 0.3) 100%);
   background: linear-gradient(180deg, rgba(216, 0, 255, 0.3) 0%, rgba(113, 0, 255, 0.3) 100%);
   padding: 4px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   position: absolute;
@@ -1292,8 +1292,8 @@ body {
   background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 8px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
@@ -1670,8 +1670,8 @@ body {
   background: -o-linear-gradient(bottom, rgba(173, 0, 255, 0) 14.74%, #4200ff 99.62%);
   background: linear-gradient(0deg, rgba(173, 0, 255, 0) 14.74%, #4200ff 99.62%);
   padding: 6px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
@@ -2200,8 +2200,8 @@ body {
   background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 4px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   -webkit-transition: background 0.3s ease 0s;
@@ -2375,8 +2375,8 @@ body {
   background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 4px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   border-radius: inherit;
@@ -2516,8 +2516,8 @@ body {
   background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 6px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
@@ -2625,8 +2625,8 @@ body {
   background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 4px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   border-radius: inherit;
@@ -2868,8 +2868,8 @@ body {
   background: #d800ff -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: #d800ff linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 4px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   border-radius: inherit;
@@ -3004,8 +3004,8 @@ body {
   background: #d800ff -o-linear-gradient(top, #d800ff 0%, #7100ff 100%);
   background: #d800ff linear-gradient(180deg, #d800ff 0%, #7100ff 100%);
   padding: 9px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 0;
@@ -3327,8 +3327,8 @@ textarea.input {
   background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 4px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
@@ -3412,8 +3412,8 @@ textarea.input {
   background: #ad00ff -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: #ad00ff linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 2px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 0;
@@ -4066,8 +4066,8 @@ textarea.input {
     background: -o-linear-gradient(top, #d800ff 0%, #7100ff 100%);
     background: linear-gradient(180deg, #d800ff 0%, #7100ff 100%);
     padding: 5px;
-    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+    -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     border-radius: inherit;
@@ -4106,8 +4106,8 @@ textarea.input {
     background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
     background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
     padding: 8px;
-    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+    -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     border-radius: 62.5rem;
@@ -7401,8 +7401,8 @@ textarea.input {
     background: -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
     background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
     padding: 8px;
-    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+    -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     border-radius: 62.5rem;
