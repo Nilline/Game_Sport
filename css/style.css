@@ -193,8 +193,8 @@ body {
   background: #ad00ff -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: #ad00ff linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 2px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 0;
@@ -288,8 +288,8 @@ body {
   background: #ad00ff -o-linear-gradient(top, #ad00ff 0%, #4200ff 100%);
   background: #ad00ff linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
   padding: 2px;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 0;
