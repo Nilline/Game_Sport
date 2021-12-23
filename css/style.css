@@ -893,7 +893,7 @@ body {
 }
 
 .page__conference {
-  padding-bottom: 4.6875rem;
+  padding-bottom: 7.5625rem;
 }
 
 .page__team {
@@ -2938,7 +2938,6 @@ body {
 }
 
 .team__slider {
-  padding: 0 0.625rem;
   overflow: visible !important;
 }
 
@@ -2989,7 +2988,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.4375rem;
 }
 
 .item-team__photo-ibg::before {
@@ -4381,7 +4380,7 @@ textarea.input {
   }
 
   .page__conference {
-    padding-bottom: 5.3125rem;
+    padding-bottom: 8.1875rem;
   }
 
   .main-screen__decor-left {
@@ -5026,6 +5025,13 @@ textarea.input {
         flex-basis: 37.8888888889%;
   }
 
+  .contacts__container {
+    padding-top: 2.75rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    padding-bottom: 4.5rem;
+  }
+
   .contacts__decor-right {
     right: 38.6666666667%;
   }
@@ -5241,6 +5247,10 @@ textarea.input {
 
   .contacts__container::before {
     left: 30px;
+  }
+
+  .team__slider {
+    padding: 0 0.625rem;
   }
 }
 
