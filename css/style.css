@@ -4859,6 +4859,10 @@ textarea.input {
     top: -27px;
   }
 
+  .products__container {
+    padding: 0;
+  }
+
   .products__arrow_left {
     left: -10px;
   }
@@ -5695,7 +5699,7 @@ textarea.input {
     bottom: -2.9375rem;
   }
 
-  .blog__title {
+  .blog__title::after {
     width: 28.3125rem;
   }
 
@@ -6601,7 +6605,7 @@ textarea.input {
     bottom: -6.6875rem;
   }
 
-  .blog__title {
+  .blog__title::after {
     width: 2.5625rem;
   }
 
@@ -6683,7 +6687,7 @@ textarea.input {
     bottom: calc(-2.9375rem + -3.75 * (((100vw - 20rem)) / ((27.99875))));
   }
 
-  .blog__title {
+  .blog__title::after {
     width: calc(28.3125rem + -25.75 * (((100vw - 20rem)) / ((27.99875))));
   }
 
