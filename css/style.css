@@ -4859,10 +4859,6 @@ textarea.input {
     top: -27px;
   }
 
-  .products__container {
-    padding: 0;
-  }
-
   .products__arrow_left {
     left: -10px;
   }
@@ -5209,6 +5205,10 @@ textarea.input {
     -webkit-transform: translate(2px, 0%);
         -ms-transform: translate(2px, 0%);
             transform: translate(2px, 0%);
+  }
+
+  .products__container {
+    padding: 0;
   }
 
   .products__title {
