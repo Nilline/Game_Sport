@@ -5461,7 +5461,7 @@ textarea.input {
 
   .contacts__container {
     padding-top: 2.75rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.5625rem;
   }
 
   .contacts__container::before {
@@ -5489,6 +5489,7 @@ textarea.input {
 
   .contacts__column_image {
     padding: 0;
+    margin-bottom: 0.3125rem;
   }
 }
 
@@ -5536,7 +5537,7 @@ textarea.input {
   }
 
   .page__channels {
-    padding-bottom: 2.8125rem;
+    padding-bottom: 4.125rem;
   }
 
   .main-screen__bg-ibg {
@@ -6182,6 +6183,10 @@ textarea.input {
     top: -5px;
   }
 
+  .item-channels__content {
+    padding: 0;
+  }
+
   .item-channels::before,
   .item-channels::after {
     min-width: 135%;
@@ -6199,6 +6204,9 @@ textarea.input {
 
   .bottom-slide-content-cases {
     row-gap: 1.0625rem;
+    -webkit-column-gap: 1.5625rem;
+       -moz-column-gap: 1.5625rem;
+            column-gap: 1.5625rem;
   }
 
   .bottom-slide-content-cases__button-block .block-button__button {
@@ -6282,12 +6290,6 @@ textarea.input {
 
   .referral__container {
     padding-bottom: 2.5rem;
-  }
-
-  .referral__container::before {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ad00ff), to(rgba(68, 0, 255, 0)));
-    background: -o-linear-gradient(top, #ad00ff 0%, rgba(68, 0, 255, 0) 100%);
-    background: linear-gradient(180deg, #ad00ff 0%, rgba(68, 0, 255, 0) 100%);
   }
 
   .content-referral__text {
