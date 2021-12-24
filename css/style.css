@@ -5776,10 +5776,6 @@ textarea.input {
     padding-bottom: 2.5625rem;
   }
 
-  .page__referral {
-    padding-bottom: 2.875rem;
-  }
-
   .page__contacts {
     padding-bottom: 2.5rem;
   }
@@ -5924,6 +5920,12 @@ textarea.input {
 
   div.block-button_main .block-button__button {
     min-height: 2.5rem;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 30em) {
+  .page__referral {
+    padding-bottom: 0rem;
   }
 }
 
@@ -6279,7 +6281,7 @@ textarea.input {
   }
 
   .referral__container {
-    padding-bottom: 0;
+    padding-bottom: 2.5rem;
   }
 
   .referral__container::before {
@@ -6763,10 +6765,6 @@ textarea.input {
 
   .page__blog {
     padding-bottom: calc(2.5625rem + 5.5625 * (((100vw - 20rem)) / ((27.99875))));
-  }
-
-  .page__referral {
-    padding-bottom: calc(2.875rem + 3.875 * (((100vw - 20rem)) / ((27.99875))));
   }
 
   .page__contacts {
@@ -7304,6 +7302,12 @@ textarea.input {
 @media (min-width: 60em) and (max-width: 90em) {
   .page__cases {
     padding-bottom: calc(3.0625rem + 5.0625 * (((100vw - 60rem)) / ((30))));
+  }
+}
+
+@media (max-width: 47.99875em) and (min-width: 30em) and (max-width: 47.99875em) {
+  .page__referral {
+    padding-bottom: calc(0rem + 6.75 * (((100vw - 30rem)) / ((17.99875))));
   }
 }
 
