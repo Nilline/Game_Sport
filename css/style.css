@@ -2989,9 +2989,9 @@ body {
 .team__slide {
   opacity: 0 !important;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s ease 0s;
-  -o-transition: opacity 0.5s ease 0s;
-  transition: opacity 0.5s ease 0s;
+  -webkit-transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s;
+  -o-transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s, visibility 0.5s ease 0s;
 }
 
 .team__arrow {
