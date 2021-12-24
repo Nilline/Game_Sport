@@ -3038,7 +3038,7 @@ body {
 }
 
 .item-team__photo-ibg img {
-  border-radius: inherit;
+  border-radius: 50%;
   overflow: hidden;
 }
 
