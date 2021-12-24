@@ -6138,6 +6138,9 @@ textarea.input {
   .platform__picture-ibg {
     margin-top: -48px;
     margin-right: -10px;
+    -webkit-transform: rotate(31deg) scale(1.2) translate(-13px, 13px);
+        -ms-transform: rotate(31deg) scale(1.2) translate(-13px, 13px);
+            transform: rotate(31deg) scale(1.2) translate(-13px, 13px);
   }
 
   .content-platform__item:not(:last-child) {
