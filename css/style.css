@@ -5460,7 +5460,7 @@ textarea.input {
   }
 
   .contacts__container {
-    padding-top: 2.75rem;
+    padding-top: 3.125rem;
     padding-bottom: 2.5625rem;
   }
 
@@ -6309,6 +6309,10 @@ textarea.input {
 
   .contacts__title {
     margin-bottom: 1.875rem;
+  }
+
+  .contacts__title::after {
+    right: -35px;
   }
 
   .content-contacts__list:not(:last-child) {
