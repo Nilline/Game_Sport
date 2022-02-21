@@ -1,0 +1,577 @@
+.hystmodal__opened {
+	position: fixed;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+}
+.hystmodal__shadow {
+	position: fixed;
+	border: none;
+	display: block;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 98;
+	opacity: 0;
+	transition: opacity 0.15s ease;
+	background-color: black;
+}
+.hystmodal__shadow--show {
+	pointer-events: auto;
+	opacity: 0.6;
+}
+.hystmodal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	opacity: 1;
+	pointer-events: none;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	z-index: 99;
+	visibility: hidden;
+}
+.hystmodal--active {
+	opacity: 1;
+}
+.hystmodal--moved,
+.hystmodal--active {
+	pointer-events: auto;
+	visibility: visible;
+}
+.hystmodal__wrap {
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 100%;
+	min-height: 100%;
+	margin: auto;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+.hystmodal__window {
+	position: relative;
+	margin: 50px 0;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 650px;
+	max-width: 100%;
+	overflow: visible;
+	transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+	background: linear-gradient(180deg, #20007b 0%, #000000 100%);
+	transform: scale(0.9);
+	border-radius: 52px;
+	opacity: 0;
+	padding: 56px;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		right: -1px;
+		top: -1px;
+		left: -1px;
+		border-radius: 52px;
+		overflow: hidden;
+	}
+	&::before {
+		background: linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
+		padding: 4px;
+		-webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
+		-webkit-mask-composite: destination-out;
+		mask-composite: exclude;
+	}
+	& > div {
+		position: relative;
+		z-index: 1;
+	}
+	&_singin {
+		width: 440px;
+	}
+	// .hystmodal__window_password-recovery
+	&_password-recovery {
+		width: 440px;
+	}
+	// .hystmodal__window_password-recovery
+	&_password-recovery {
+		width: 440px;
+	}
+	// .hystmodal__window_question
+	&_question {
+		width: 650px;
+	}
+}
+@media (max-width: 650px) {
+	.hystmodal__window {
+		padding: 40px;
+	}
+}
+.hystmodal--active .hystmodal__window {
+	transform: scale(1);
+	opacity: 1;
+}
+.hystmodal__close {
+	transition: transform 0.2s ease 0s;
+	position: absolute;
+	z-index: 10;
+	top: -12px;
+	right: -12px;
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url("@img/icons/popup-close.svg") center / 24px no-repeat;
+	border: none;
+	font-size: 0;
+	cursor: pointer;
+	outline: none;
+	@media (any-hover: hover) {
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+@media all and (max-width: 767px) {
+	.hystmodal__close {
+		top: 30px;
+		right: 30px;
+		width: 24px;
+		height: 24px;
+		background: url("@img/icons/popup-close.svg") center / 24px no-repeat;
+	}
+}
+
+.name-hystmodal {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.label-hystmodal {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+
+.block-input-hystmodal {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 44px;
+		background: #ad00ff linear-gradient(180deg, #ad00ff 0%, #4200ff 100%);
+		padding: 2px;
+		-webkit-mask: linear-gradient(#fff 0 0, #fff 0 0) content-box, linear-gradient(#fff 0 0, #fff 0 0);
+		-webkit-mask-composite: destination-out;
+		mask-composite: exclude;
+		opacity: 0;
+		transition: opacity 0.2s ease 0s;
+	}
+	&_border-radius {
+		&::before{
+			border-radius: 22px;
+			
+		}
+	}
+	&._form-focus {
+		input {
+			border-color: transparent;
+		}
+		&::before {
+			opacity: 1;
+		}
+	}
+	
+	// .block-input-hystmodal__eye
+	&__eye {
+		cursor: pointer;
+		display: inline-flex;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		right: 16px;
+		transform: translate(0%, -50%);
+		&::before {
+			content: "";
+			width: inherit;
+			height: inherit;
+			background: url("@img/icons/eye-Invisible.svg") center / cover no-repeat;
+		}
+		&._visible {
+			&::before {
+				background: url("@img/icons/eye.svg") center / cover no-repeat;
+			}
+		}
+	}
+}
+
+.registration-hystmodal {
+	position: relative;
+	// .registration-hystmodal__name
+	&__name {
+		position: relative;
+		z-index: 1;
+	}
+	// .registration-hystmodal__form
+	&__form {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	// .registration-hystmodal__row
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		&_margin {
+			margin: 0 -12px 16px;
+		}
+		margin-bottom: 16px;
+		@media (max-width: 650px) {
+		}
+	}
+	// .registration-hystmodal__label
+	&__label {
+	}
+	// .registration-hystmodal__input-block
+	&__input-block {
+	}
+	// .registration-hystmodal__input
+	&__input {
+	}
+	// .registration-hystmodal__column
+	&__column {
+		flex: 0 1 50%;
+		padding: 0 12px;
+		@media (max-width: 650px) {
+			flex: 1 1 100%;
+			&:not(:last-child) {
+				margin: 0px 0px 16px 0px;
+			}
+		}
+	}
+	.bottom-form-hystmodal {
+		@media (max-width: 700px) {
+			flex-direction: column;
+			row-gap: 30px;
+		}
+	}
+}
+
+.registration {
+	// .registration__
+	&__select {
+	}
+	// .registration__checkbox
+	&__checkbox {
+		margin-top: 8px;
+		margin-bottom: 24px;
+	}
+	// .registration__form-bottom
+	&__form-bottom {
+	}
+}
+
+.checkbox {
+	position: relative;
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .checkbox__label {
+			.checkbox__checkmark {
+				background-color: #000;
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	// .checkbox__label
+	&__label {
+		display: flex;
+		align-items: center;
+		column-gap: 11px;
+	}
+	// .checkbox__checkmark
+	&__checkmark {
+		position: relative;
+		margin-bottom: 3px;
+		border-radius: 3px;
+		align-self: flex-start;
+		flex: 0 0 18px;
+		height: 18px;
+		background-color: #fff;
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: url("@img/icons/checkbox.svg") center / cover no-repeat;
+			opacity: 0;
+		}
+	}
+	// .checkbox__text
+	&__text {
+		line-height: 1.35;
+		a {
+			color: #e129ff;
+			position: relative;
+			transition: color 0.2s ease 0s, filter 0.2s ease 0s;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #e129ff;
+				transition: opacity 0.3s ease 0s;
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: #e129ff;
+					filter: drop-shadow(0px -5px 34px rgba(255, 0, 199, 0.6));
+					&::before {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.bottom-form-hystmodal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 20px;
+	// .bottom-form-hystmodal__label
+	&__label {
+		font-size: 14px;
+		line-height: 121.4%;
+		a {
+			color: #e129ff;
+			position: relative;
+			transition: color 0.2s ease 0s, filter 0.2s ease 0s;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #e129ff;
+				transition: opacity 0.3s ease 0s;
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: #e129ff;
+					filter: drop-shadow(0px -5px 34px rgba(255, 0, 199, 0.6));
+					&::before {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.block-button {
+	&.block-button {
+		@media (max-width: 479.98px) {
+			width: auto;
+		}
+	}
+	.block-button__button {
+		min-height: 54px;
+		font-size: 18px;
+		padding: 15px 24px;
+		@media (max-width: 479.98px) {
+			font-size: 14px;
+			min-height: 41px;
+			padding: 0.6875rem 22px;
+		}
+	}
+}
+//========================================================================================================================================================
+.singin-hystmodal {
+	// .singin-hystmodal__name
+	&__name {
+		position: relative;
+		z-index: 1;
+	}
+	// .singin-hystmodal__form
+	&__form {
+		position: relative;
+		z-index: 1;
+	}
+	// .singin-hystmodal__row
+	&__row {
+		margin-bottom: 16px;
+	}
+	// .singin-hystmodal__form-bottom
+	&__form-bottom {
+		margin: 24px 0px 0px 0px;
+	}
+	// .singin-hystmodal__bottom-link-block
+	&__bottom-link-block {
+		margin-top: 44px;
+		display: flex;
+		justify-content: center;
+		a {
+			color: #e129ff;
+			position: relative;
+			transition: color 0.2s ease 0s, filter 0.2s ease 0s;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #e129ff;
+				transition: opacity 0.3s ease 0s;
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: #e129ff;
+					filter: drop-shadow(0px -5px 34px rgba(255, 0, 199, 0.6));
+					&::before {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.bottom-form-hystmodal {
+	// .bottom-form-hystmodal__singin
+	&__singin {
+		line-height: 1.15;
+	}
+}
+//========================================================================================================================================================
+.recovery-password-hystmodal {
+	position: relative;
+	z-index: 1;
+	// .recovery-password-hystmodal__row
+	&__row {
+		margin-bottom: 24px;
+	}
+	// .recovery-password-hystmodal__text
+	&__text {
+		line-height: 1.62;
+		margin-bottom: 24px;
+	}
+	// .recovery-password-hystmodal__box
+	&__box {
+		display: flex;
+		justify-content: center;
+	}
+}
+//========================================================================================================================================================
+.password-reset-hystmodal {
+	// .password-reset-hystmodal__name
+	&__name {
+	}
+	// .password-reset-hystmodal__form
+	&__form {
+		position: relative;
+		z-index: 1;
+	}
+	// .password-reset-hystmodal__row
+	&__row {
+		margin-bottom: 16px;
+	}
+	// .password-reset-hystmodal__input-block
+	&__input-block {
+	}
+	// .password-reset-hystmodal__input
+	&__input {
+	}
+	// .password-reset-hystmodal__form-bottom
+	&__form-bottom {
+		display: flex;
+		justify-content: center;
+		margin-top: 24px;
+	}
+}
+//========================================================================================================================================================
+.question-hystmodal {
+	// .question-hystmodal__form
+	&__form {
+		position: relative;
+		z-index: 1;
+	}
+	// .question-hystmodal__row
+	&__row {
+		margin-bottom: 16px;
+	}
+	// .question-hystmodal__checkbox
+	&__checkbox {
+		margin: 24px 0 24px;
+	}
+}
+@media (max-width: 767px) {
+	.label-hystmodal {
+		font-size: 14px;
+	}
+	.checkbox__checkmark {
+		align-self: center;
+	}
+	.bottom-form-hystmodal__label {
+		line-height: 1.3;
+	}
+	.name-hystmodal {
+		padding-right: 25px;
+	}
+}
+@media (max-width: 479px) {
+	.hystmodal__window {
+		margin: 0;
+		padding: 24px;
+		width: calc(100% - 32px);
+		border-radius: 24px;
+		&::before {
+			border-radius: 24px;
+		}
+		.name-hystmodal {
+			font-size: 21px;
+		}
+	}
+	.hystmodal__close {
+		top: 15px;
+		right: 15px;
+	}
+}
+@media (max-width: 400px){
+	.hystmodal__window {
+		width: 100%;
+	}
+}
